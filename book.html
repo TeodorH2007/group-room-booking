@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Room</title>
+</head>
+<body>
+    <header>
+        <h1>Book Room</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="book.html">Book Room</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <fieldset>
+        <legend>Booking Form</legend>
+        <form>
+            <label for="room">Select Room:</label>
+            <select id="room" name="room" required>
+                <option value="room1">Room 1</option>
+                <option value="room2">Room 2</option>
+                <option value="room3">Room 3</option>
+            </select>
+            
+            <label for="name">Name:</label>        
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="duration">Duration (hours):</label>
+            <select id="duration" name="duration" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <label for="attendees">Number of Attendees:</label>
+            <input type="number" id="attendees" name="attendees" min="1" max="5">
+
+            <label for="purpose">Purpose of Booking:</label>
+            <textarea id="purpose" name="purpose" rows="4" cols="50"></textarea>
+
+            <label for="terms">I agree to the terms and conditions:</label>
+            <input type="checkbox" id="terms" name="terms" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </fieldset>
+</main>
+<footer>
+    <p>&copy; 2026 Group Room Bookings. All rights reserved.</p>
+</footer>
+</body>
+</html>
