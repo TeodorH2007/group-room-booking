@@ -20,7 +20,8 @@
 <main>
         <form class="booking-form"> 
             <label for="room">Select Room:</label>
-            <select id="room" name="room" required>
+            <select id="room" name="room">
+                <option value="" disabled selected>Select Room</option>
                 <option value="room1">Room 1</option>
                 <option value="room2">Room 2</option>
                 <option value="room3">Room 3</option>
@@ -39,10 +40,11 @@
             <input type="time" id="time" name="time" required>
 
             <label for="duration">Duration (hours):</label>
-            <select id="duration" name="duration" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+            <select name="duration" id="duration" required>
+                <option value="" disabled selected>Select duration</option>
+                <option value="1-hour">1</option>
+                <option value="2-hours">2</option>
+                <option value="3-hours">3</option>
             </select>
 
             <label for="attendees">Number of Attendees:</label>
